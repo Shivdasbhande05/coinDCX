@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="search">
+                <input type="text" id="search" placeholder="Search by Name or Symbol">
+            </div>
+            <div class="sort">
+                <input type="submit" value="Sort by Mkt Cap" id="market-cap">
+                <input type="submit" value="Sort by Percentage Change" id="percentage-change">
+            </div>
+        </div>
+        <div class="data">
+            <table id="currency-table">
+                <!-- <thead>
+                    <tr>
+                        <th>Symbol</th>
+                        <th>Currency Name</th>
+                        <th>Short Name</th>
+                        <th>Current Price</th>
+                        <th>Total Volume</th>
+                        <th>Change in percentage</th>
+                        <th>Market Cap</th>
+                    </tr>
+                </thead> -->
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script type="module" src="./src/tableData.js"></script>
+    <script type="module" src="./src/api.js"></script>
+</body>
+</html>
